@@ -167,3 +167,10 @@ Facter.add(:ipaddress_private_10) do
     ip
   end
 end
+
+Facter.add(:public_ip) do
+  confine :kernel => Facter::Util::IP.supported_platforms
+  setcode do
+    Facter::Util::Resolution.exec("hostname -i")
+  end
+end

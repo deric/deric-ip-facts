@@ -32,6 +32,11 @@ describe 'parse_ip' do
     end
   end
 
+  context 'public ip fact' do
+    #Facter::Util::IP.stubs(:exec_ifconfig).returns(my_fixture_read("ifconfig_docker.txt"))
+    #Facter.fact(:public_ip).should == '147.32.232.88'
+  end
+
   context 'test localhost ip addresses' do
     ipaddr = '127.0.0.1'
     is_private(ipaddr).should == true
