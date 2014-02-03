@@ -1,0 +1,3 @@
+fixtures:
+  symlinks:
+    ip-facts: "#{source_dir}"
