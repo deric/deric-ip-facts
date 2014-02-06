@@ -30,6 +30,7 @@ describe 'parse_ip' do
     Facter::Util::IP.get_interfaces.each do |interface|
       puts interface
     end
+
   end
 
   context 'public ip fact' do
