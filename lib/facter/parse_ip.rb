@@ -93,7 +93,6 @@ Facter.add(:ipaddress_public) do
     ip=''
     Facter::Util::IP.get_interfaces.each do |interface|
       if has_address(interface)
-        puts "private #{(not is_private(interface))}"
         if (not is_private(interface))
           ip = Facter::Util::IP.get_interface_value(interface, 'ipaddress')
           break
