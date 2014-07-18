@@ -1,4 +1,4 @@
-name    'deric-ip-facts'
+name    'deric-ip_facts'
 version '0.1.0'
 source 'UNKNOWN'
 author 'deric'
